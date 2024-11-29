@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="0dp"
+    android:background="@drawable/wavesky">
+
+    <!-- Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#f4d0e3" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:padding="16dp">
+        <androidx.cardview.widget.CardView
+            android:layout_width="300dp"
+            android:layout_height="100dp"
+            android:layout_margin="8dp"
+
+            app:cardCornerRadius="18dp"
+            app:cardElevation="20dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/gradient_background_summer_dog"/>
+            <TextView
+                android:id="@+id/textRightNowIAm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Right now, I am ..."
+                android:textSize="22sp"
+                android:layout_gravity="center"/>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/moodRadioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="47dp">
+
+
+
+        <RadioButton
+            android:id="@+id/littleStressed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A little stressed"
+            android:textSize="20sp"
+            />
+
+
+        <RadioButton
+            android:id="@+id/definitelyStressed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Definitely stressed"
+            android:textSize="20sp"
+            />
+
+        <RadioButton
+            android:id="@+id/stressedOut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Stressed out"
+            android:textSize="20sp"
+            />
+
+        <RadioButton
+            android:id="@+id/feelingGood"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Feeling good"
+            android:textSize="20sp"
+            />
+
+        <RadioButton
+            android:id="@+id/feelingGreat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Feeling great"
+            android:textSize="20sp"
+            />
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="end" />
+
+        <Button
+            android:id="@+id/buttonMoveToSleepData"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="Next "
+            android:drawableRight="@drawable/next2"
+            />
+    </LinearLayout>
+</LinearLayout>

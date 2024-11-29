@@ -1,0 +1,716 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <!-- Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#f4d0e3" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:background="@drawable/wavesky">
+
+            <!-- Scale Definition in Bold -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Scale: 1=Not at all; 2=A little; 3=somewhat; 4=very; 5=extremely"
+                android:textSize="20sp"/>
+            <!-- Empty space for line gap -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="16dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="300dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="8dp"
+
+                    app:cardCornerRadius="18dp"
+                    app:cardElevation="20dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/gradient_background_summer_dog"/>
+                    <!-- Question 1: Extraverted, Enthusiastic -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="In the past 15 minutes, I was \n  extraverted, enthusiastic."
+                        android:textSize="22sp"
+                        android:layout_gravity="center"/>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+            <!-- RadioGroup for Question 1 options -->
+            <RadioGroup
+                android:id="@+id/radioGroupQuestion1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginStart="30dp">
+
+                <!-- RadioButtons for Question 1 options -->
+                <RadioButton
+                    android:id="@+id/question1Option1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1"
+                    android:textSize="20sp"/>
+                <RadioButton
+                    android:id="@+id/question1Option2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2"
+                    android:textSize="20sp"/>
+                <RadioButton
+                    android:id="@+id/question1Option3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3"
+                    android:textSize="20sp"/>
+                <RadioButton
+                    android:id="@+id/question1Option4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4"
+                    android:textSize="20sp"/>
+                <RadioButton
+                    android:id="@+id/question1Option5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5"
+                    android:textSize="20sp"/>
+
+                <!-- Add other RadioButtons for Question 1 options -->
+
+            </RadioGroup>
+
+            <!-- Add similar structures for other questions -->
+            <!-- RadioGroup for Question 1 options -->
+            <!-- Question 2 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="300dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="8dp"
+
+                    app:cardCornerRadius="18dp"
+                    app:cardElevation="20dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/gradient_background_summer_dog"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="In the past 15 minutes, I was \n      critical, quarrelsome."
+                        android:textSize="22sp"
+                        android:layout_gravity="center"/>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+            <RadioGroup
+                android:id="@+id/radioGroupQuestion2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginStart="30dp">
+
+                <!-- RadioButtons for Question 1 options -->
+                <RadioButton
+                    android:id="@+id/question2Option1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1"
+                    android:textSize="20sp"/>
+                <RadioButton
+                    android:id="@+id/question2Option2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2"
+                    android:textSize="20sp"/>
+                <RadioButton
+                    android:id="@+id/question2Option3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3"
+                    android:textSize="20sp"
+                    />
+                <RadioButton
+                    android:id="@+id/question2Option4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4"
+                    android:textSize="20sp"/>
+                <RadioButton
+                    android:id="@+id/question2Option5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5"
+                    android:textSize="20sp"/>
+
+                <!-- Add other RadioButtons for Question 1 options -->
+
+            </RadioGroup>
+
+            <!-- Question 3 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="300dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="8dp"
+
+                    app:cardCornerRadius="18dp"
+                    app:cardElevation="20dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/gradient_background_summer_dog"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="   In the past 15 minutes,\n     I was dependable,\n        self-disciplined."
+                        android:textSize="22sp"
+                        android:layout_gravity="center"/>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+            <RadioGroup
+                android:id="@+id/radioGroupQuestion3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginStart="30dp">
+
+                <!-- RadioButtons for Question 1 options -->
+                <RadioButton
+                    android:id="@+id/question3Option1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1"
+                    android:textSize="20sp"/>
+                <RadioButton
+                    android:id="@+id/question3Option2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2"
+                    android:textSize="20sp"/>
+                <RadioButton
+                    android:id="@+id/question3Option3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3"
+                    android:textSize="20sp"/>
+                <RadioButton
+                    android:id="@+id/question3Option4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4"
+                    android:textSize="20sp"/>
+                <RadioButton
+                    android:id="@+id/question3Option5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5"
+                    android:textSize="20sp"/>
+
+
+            </RadioGroup>
+
+            <!-- Question 4 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="300dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="8dp"
+
+                    app:cardCornerRadius="18dp"
+                    app:cardElevation="20dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/gradient_background_summer_dog"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="     In the past 15 minutes,\n  I was anxious, easily upset."
+                        android:textSize="22sp"
+                        android:layout_gravity="center"/>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+            <RadioGroup
+                android:id="@+id/radioGroupQuestion4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginStart="30dp">
+
+                <!-- RadioButtons for Question 1 options -->
+                <RadioButton
+                    android:id="@+id/question4Option1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1"
+                    android:textSize="20sp"/>
+                <RadioButton
+                    android:id="@+id/question4Option2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2"
+                    android:textSize="20sp"/>
+                <RadioButton
+                    android:id="@+id/question4Option3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3"
+                    android:textSize="20sp"/>
+                <RadioButton
+                    android:id="@+id/question4Option4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4"
+                    android:textSize="20sp"/>
+                <RadioButton
+                    android:id="@+id/question4Option5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5"
+                    android:textSize="20sp"/>
+
+            </RadioGroup>
+
+            <!-- Question 5 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="300dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="8dp"
+
+                    app:cardCornerRadius="18dp"
+                    app:cardElevation="20dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/gradient_background_summer_dog"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="  In the past 15 minutes,\n    I was open to new\n experiences, complex."
+                        android:textSize="22sp"
+                        android:layout_gravity="center"/>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+            <RadioGroup
+                android:id="@+id/radioGroupQuestion5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginStart="30dp">
+
+                <!-- RadioButtons for Question 1 options -->
+                <RadioButton
+                    android:id="@+id/question5Option1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1"
+                    android:textSize="20sp"/>
+                <RadioButton
+                    android:id="@+id/question5Option2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2"
+                    android:textSize="20sp"/>
+                <RadioButton
+                    android:id="@+id/question5Option3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3"
+                    android:textSize="20sp"/>
+                <RadioButton
+                    android:id="@+id/question5Option4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4"
+                    android:textSize="20sp"/>
+                <RadioButton
+                    android:id="@+id/question5Option5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5"
+                    android:textSize="20sp"/>
+
+            </RadioGroup>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="300dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="8dp"
+
+                    app:cardCornerRadius="18dp"
+                    app:cardElevation="20dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/gradient_background_summer_dog"/>
+                    <!-- Question 6 -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="In the past 15 minutes,\nI was reserved, quiet."
+                        android:textSize="22sp"
+                        android:layout_gravity="center"/>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+            <RadioGroup
+                android:id="@+id/radioGroupQuestion6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginStart="30dp">
+
+                <!-- RadioButtons for Question 1 options -->
+                <RadioButton
+                    android:id="@+id/question6Option1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1"
+                    android:textSize="20sp"/>
+                <RadioButton
+                    android:id="@+id/question6Option2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2"
+                    android:textSize="20sp"/>
+                <RadioButton
+                    android:id="@+id/question6Option3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3"
+                    android:textSize="20sp"/>
+                <RadioButton
+                    android:id="@+id/question6Option4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4"
+                    android:textSize="20sp"/>
+                <RadioButton
+                    android:id="@+id/question6Option5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5"
+                    android:textSize="20sp"/>
+
+            </RadioGroup>
+
+            <!-- Question 7 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="300dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="8dp"
+
+                    app:cardCornerRadius="18dp"
+                    app:cardElevation="20dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/gradient_background_summer_dog"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="In the past 15 minutes,\nI was sympathetic, warm."
+                        android:textSize="22sp"
+                        android:layout_gravity="center"/>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+            <RadioGroup
+                android:id="@+id/radioGroupQuestion7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginStart="30dp">
+
+                <!-- RadioButtons for Question 1 options -->
+                <RadioButton
+                    android:id="@+id/question7Option1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1"
+                    android:textSize="20sp"/>
+                <RadioButton
+                    android:id="@+id/question7Option2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2"
+                    android:textSize="20sp"/>
+                <RadioButton
+                    android:id="@+id/question7Option3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3"
+                    android:textSize="20sp"/>
+                <RadioButton
+                    android:id="@+id/question7Option4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4"
+                    android:textSize="20sp"/>
+                <RadioButton
+                    android:id="@+id/question7Option5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5"
+                    android:textSize="20sp"/>
+
+            </RadioGroup>
+
+            <!-- Question 8 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="300dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="8dp"
+
+                    app:cardCornerRadius="18dp"
+                    app:cardElevation="20dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/gradient_background_summer_dog"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="    In the past 15 minutes,\nI was disorganized, careless."
+                        android:textSize="22sp"
+                        android:layout_gravity="center"/>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+            <RadioGroup
+                android:id="@+id/radioGroupQuestion8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginStart="30dp">
+
+                <!-- RadioButtons for Question 1 options -->
+                <RadioButton
+                    android:id="@+id/question8Option1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1"
+                    android:textSize="20sp"/>
+                <RadioButton
+                    android:id="@+id/question8Option2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2"
+                    android:textSize="20sp"/>
+                <RadioButton
+                    android:id="@+id/question8Option3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3"
+                    android:textSize="20sp"/>
+                <RadioButton
+                    android:id="@+id/question8Option4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4"
+                    android:textSize="20sp"/>
+                <RadioButton
+                    android:id="@+id/question8Option5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5"
+                    android:textSize="20sp"/>
+
+            </RadioGroup>
+
+            <!-- Question 9 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="300dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="8dp"
+
+                    app:cardCornerRadius="18dp"
+                    app:cardElevation="20dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/gradient_background_summer_dog"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" In the past 15 minutes,\n I was calm, emotionally \n              stable."
+                        android:textSize="22sp"
+                        android:layout_gravity="center"/>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+            <RadioGroup
+                android:id="@+id/radioGroupQuestion9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginStart="30dp">
+
+                <!-- RadioButtons for Question 1 options -->
+                <RadioButton
+                    android:id="@+id/question9Option1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1"
+                    android:textSize="20sp"/>
+                <RadioButton
+                    android:id="@+id/question9Option2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2"
+                    android:textSize="20sp"/>
+                <RadioButton
+                    android:id="@+id/question9Option3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3"
+                    android:textSize="20sp"/>
+                <RadioButton
+                    android:id="@+id/question9Option4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4"
+                    android:textSize="20sp"/>
+                <RadioButton
+                    android:id="@+id/question9Option5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5"
+                    android:textSize="20sp"/>
+
+            </RadioGroup>
+
+            <!-- Question 10 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="300dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="8dp"
+
+                    app:cardCornerRadius="18dp"
+                    app:cardElevation="20dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/gradient_background_summer_dog"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" In the past 15 minutes,\n   I was conventional,\n         uncreative."
+                        android:textSize="22sp"
+                        android:layout_gravity="center"/>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+            <RadioGroup
+                android:id="@+id/radioGroupQuestion10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginStart="30dp">
+
+                <!-- RadioButtons for Question 1 options -->
+                <RadioButton
+                    android:id="@+id/question10Option1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1"
+                    android:textSize="20sp"/>
+                <RadioButton
+                    android:id="@+id/question10Option2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2"
+                    android:textSize="20sp"/>
+                <RadioButton
+                    android:id="@+id/question10Option3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3"
+                    android:textSize="20sp"/>
+                <RadioButton
+                    android:id="@+id/question10Option4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4"
+                    android:textSize="20sp"/>
+                <RadioButton
+                    android:id="@+id/question10Option5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5"
+                    android:textSize="20sp"/>
+
+            </RadioGroup>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:layout_gravity="end" />
+                <Button
+                    android:id="@+id/buttonMoveToHome"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:text="Go Home"
+                    android:drawableRight="@drawable/house1"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

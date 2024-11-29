@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Other views and components in the layout -->
+
+    <Button
+        android:id="@+id/buttonLockScreen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lock Screen"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp" />
+    <Button
+        android:id="@+id/buttonLight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Light"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp" />
+    <Button
+        android:id="@+id/buttonLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Location"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/buttonCharge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Charge"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp" />
+
+</LinearLayout>

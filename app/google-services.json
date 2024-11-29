@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "648756774889",
+    "project_id": "smartgpa-83387",
+    "storage_bucket": "smartgpa-83387.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:648756774889:android:d3f8f0e96ba917670b6d78",
+        "android_client_info": {
+          "package_name": "com.example.emadata"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAWRRx8CQDDOHiT6x2HszYyGJezjpteq54"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
